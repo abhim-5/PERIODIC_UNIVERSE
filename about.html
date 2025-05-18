@@ -6,7 +6,7 @@
     <title>About the Periodic Table</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="/Periodic Table/images/logo.png" sizes="196x196" type="image/png">
+    <link rel="icon" href="logo.png" sizes="196x196" type="image/png">
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,12 +15,19 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap">
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anybody:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
         body {
             font-family: "Noto Sans", sans-serif;
             margin: 0;
             padding-top: 70px; /* Space for fixed navbar */
             color: white !important;
             background-color: black !important;
+        }
+        .author a{
+            color: aquamarine;
+            font-size: 20px;
+            
         }
         h1{
             color: cyan !important;
@@ -38,8 +45,22 @@
         ul li strong {
             color: #2b6993 !important;
         }
+        #heade{
+             font-family: "Noto Sans", sans-serif !important;
+        }
         .navbar {
             position: absolute;
+        }
+        .navbar-nav .nav-item {
+             margin: 0.9rem 4em; /* Add spacing between items in collapsed view */
+        }
+
+        .nav-item{
+            transition: all 0.6s ease;
+        }
+        .nav-link:hover{
+           color: aquamarine;
+           scale: 1.3;  
         }
         .hero-section {
             padding: 3rem;
@@ -102,8 +123,8 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="images/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+            <a id="heade" class="navbar-brand" href="index.html">
+               
                 Periodic Universe
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -112,10 +133,10 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a  class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/Periodic Table/docs/periodic_table.pdf" target="_blank">Periodic Table</a>
+                        <a class="nav-link" href="docs/periodic_table.pdf" target="_blank">Periodic Table</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="about.html">About</a>
@@ -368,23 +389,9 @@
         <div class="container">
             <p class="mb-2">© 2025 Periodic Universe</p>
             <p>Created by:</p>
-            <ul class="list-inline">
-                <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/in/ankushgupta18/" target="_blank">Ankush Gupta</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/in/het-gohil/" target="_blank">Het Gohil</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/in/shlok-jani-a5a98732b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Shlok Jani</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/in/dhwani-parmar-6a7bb1346/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Dhwani Parmar</a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="https://www.linkedin.com/in/siddhi-brahmbhatt-482590347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Siddhi Brahmabhatt</a>
-                </li>
-            </ul>
+                <div class="author">
+                    <a href="https://www.linkedin.com/in/abhimanyu-kumar5/" target="_blank">Abhimanyu Kumar</a>
+                </div>
         </div>
     </footer>
 

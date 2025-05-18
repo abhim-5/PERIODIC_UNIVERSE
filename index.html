@@ -8,10 +8,11 @@
         <meta text="Use APIs from RapidAPI Hub" content="A periodic table of elements with information about each element.">
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="icon" type="image/png" href="logo.png">
 
     <link href="styles.css" rel="stylesheet" type="text/css">
     <link href="styles2.css" rel="stylesheet" type="text/css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
      
 
 </head>
@@ -33,8 +34,8 @@
         <button class="btn1" id="grid">GRID</button>
     </div>
 
-<div id="scrollButton">
-  <button onclick="showMainContent()">Scroll to main page</button>
+<div   id="scrollButton">
+  <button  onclick="showMainContent()">Scroll to main page</button>
 </div>
 
 
@@ -46,13 +47,13 @@
 <div id="overlayContent">
   
 
-   <div class="modalContainer">
+   <div class="modalContainer ">
         <div class="modal">
-            <div class="modalHeadingContainer">
+            <div class="modalHeadingContainer ">
                 <div class="modalElementSymbol"></div>
                 <div class="modalHeading elementHeading"></div>
             </div>
-            <div class="infoSection">
+            <div class="infoSection ">
                 <div class="modalLabel">Atomic number:<span class=" modalInfo atomicNumber"></span></div>
                 <div class="modalLabel">Elemental Group:<span class=" modalInfo elementalGroup"></span></div>
                 <div class="modalLabel">Standard State:<span class=" modalInfo elementState"></span></div>
@@ -78,9 +79,9 @@
     <header>
         <h1>PERIODIC TABLE OF ELEMENTS</h1>
     </header>
-<div style="margin-top: 40px;"></div>
+                  <div style="margin-top: 40px;"></div>
 
-<section class="searchbar">
+   <section  class="searchbar">
 <div class="filterSection">
     <!-- Search container with embedded dropdown -->
     <div class="searchWithDropdown">
@@ -94,7 +95,7 @@
     </div>
 
     <!-- Group Filter (unchanged) -->
-    <select id="groupFilter">
+    <select  id="groupFilter">
         <option value="all">All Groups</option>
         <option value="Noble Gas">Noble Gas</option>
         <option value="Alkali Metal">Alkali Metal</option>
@@ -107,13 +108,16 @@
         <option value="Actinide">Actinide</option>
         <option value="Post Transition Metal">Post-Transition Metal</option>
     </select>
+        
+       <a href="index3.html" class="neon2-btn">Periodic Trends</a>
+
 </div>
 
 <div id="noResultsMessage" style="display: none; color: rgb(255, 0, 0); text-align: center; margin-top: 20px;">
    <h3>🔍 No Elements Found.</h3>
 </div>
 
-</section>
+   </section>
 
 
 
@@ -850,37 +854,35 @@
     </div>
 
 
-<!-- Left side legends -->
-<div class="legend-group left-legends">
+      <!-- Left side legends -->
+           <div class="legend-group left-legends">
   <div class="legend-box alkali-Metal">Alkali Metals</div>
   <div class="legend-box alkaline-earth-metal">Alkaline Earth Metals</div>
   <div class="legend-box transition-metal">Transition Metals</div>
   <div class="legend-box metalloids">Metalloids</div>
   <div class="legend-box post-transition-metals">Post Transition Metals</div>
-</div>
+           </div>
 
-<!-- Right side legends -->
-<div class="legend-group right-legends">
+      <!-- Right side legends -->
+           <div class="legend-group right-legends">
   <div class="legend-box other-non-metals">Other Non-Metals</div>
   <div class="legend-box halogens">Halogens</div>
   <div class="legend-box noble-gases">Noble Gases</div>
   <div class="legend-box lanthanides">Lanthanides</div>
   <div class="legend-box actinides">Actinides</div>
+
+
+
+
+
+
+
+     
+       
+     
+
+      
 </div>
-
-
-
-
-
-
-
-</div>
-
-
-
-    
-
-
 
 
     <script type="text/javascript">
@@ -1260,6 +1262,12 @@ function showMainContent() {
     </script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.3.0/purify.min.js"></script>
     <script src="app.js"></script>
+
+
+
+
+
+
 
 </body>
 
