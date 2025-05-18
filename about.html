@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Periodic Table</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/Periodic Table/images/logo.png" sizes="196x196" type="image/png">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Optional: Custom Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap">
+
+    <style>
+        body {
+            font-family: "Noto Sans", sans-serif;
+            margin: 0;
+            padding-top: 70px; /* Space for fixed navbar */
+            color: white !important;
+            background-color: black !important;
+        }
+        h1{
+            color: cyan !important;
+        }
+        .subhead{
+            color: white;
+        }
+        h2{
+            text-align: center;
+            color: yellow !important;
+        }
+        h3{
+            color: rgba(255, 166, 0, 0.704) !important;
+        }
+        ul li strong {
+            color: #2b6993 !important;
+        }
+        .navbar {
+            position: absolute;
+        }
+        .hero-section {
+            padding: 3rem;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .hero-section img {
+            max-width: 200px;
+            border-radius: 50%;
+        }
+        .section-title {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+        .responsive-image {
+            max-width: 90%;
+            height: auto;
+        }
+        footer {
+            background: #343a40;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+        #scrollspy-nav {
+            position: sticky;
+            top: 100px;
+            height: calc(100vh - 70px);
+            overflow-y: auto;
+            border-right: 1px solid #ddd;
+            padding-right: 0.5rem;
+            background-color: black !important;
+            font-family: 'Times New Roman', Times, serif;
+            font-size:22px;
+        }
+        .flex-column{
+            list-style-type:disc;
+            list-style-image:-webkit-gradient(linear, left top, right top, from(#ffffff), to(#d7d4d4), color-stop(0.5, #d7d0d0));
+            padding-left: 1.5rem;
+        }
+    .image_{
+       width: 400px;
+       height: 230px;
+    }
+       
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#scrollspy-nav" data-bs-offset="70" tabindex="0">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                Periodic Universe
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/Periodic Table/docs/periodic_table.pdf" target="_blank">Periodic Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <h1>The Periodic Table: <span class="subhead">A Masterpiece of Chemistry</span> </h1>
+        <p class="lead">Discover the history, structure, and significance of the periodic table.</p>
+        <img class="image_" src="images/dmitri_mendeleev.jpg" alt="Dmitri Mendeleev">
+        <p class="mt-3">Dmitri Mendeleev, the creator of the modern periodic table.</p>
+    </div>
+
+    <!-- Main Content -->
+    <main class="container my-4">
+        <div class="row">
+            <!-- Scrollspy Navigation -->
+            <nav id="scrollspy-nav" class="col-md-3 d-none d-md-block bg-light">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#historical-background">Historical Background</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#structure">Structure of the Periodic Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categories">Groups and Categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#importance">Importance of the Periodic Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#future">Future of the Periodic Table</a>
+                    </li>
+                </ul>
+            </nav>
+        <!-- Historical Background -->
+        <main class="col-md-9 ms-sm-auto">
+        <section id="historical-background" >
+            <h2 class="section-title">Historical Background</h2>
+            <p>The periodic table was created by Dmitri Mendeleev in 1869. Mendeleev's genius lay in organizing elements based on their atomic mass and leaving spaces for elements yet to be discovered. His predictions about the properties of undiscovered elements were remarkably accurate, cementing the periodic table as a cornerstone of chemistry.</p>
+            <img src="images/mendeleev_table.png" alt="Mendeleev's Periodic Table" class="responsive-image">
+         <br>
+         <br>
+        </section>
+
+        <!-- Structure of the Periodic Table -->
+        <section id="structure">
+            <h2 class="section-title">Structure of the Periodic Table</h2>
+            <p>The periodic table is divided into rows called <strong>periods</strong> and columns called <strong>groups</strong>. Each element is arranged based on its atomic number, which represents the number of protons in its nucleus.</p>
+            <img src="images/periodic_table_structure.png" alt="Periodic Table Structure" class="responsive-image">
+            <br><br>
+            <ul>
+                <li><strong>Periods:</strong> Horizontal rows (1 to 7) represent the principal energy levels.</li>
+                <li><strong>Groups:</strong> Vertical columns (1 to 18) group elements with similar chemical properties.</li>
+            </ul>
+            <br><br>
+        </section>
+
+        <!-- Groups and Categories -->
+        <section id="categories">
+            <h2 class="section-title">Groups and Categories</h2>
+            <p>The periodic table is divided into categories based on shared chemical and physical properties. Below is a detailed explanation of each category:</p>
+        
+            <h3 class="mt-4">1. Alkali Metals (Group 1)</h3>
+            <p>
+                Alkali metals are highly reactive metals found in Group 1 of the periodic table. They include lithium (Li), sodium (Na), potassium (K), rubidium (Rb), cesium (Cs), and francium (Fr).
+            </p>
+            <ul>
+                <li><strong>Properties:</strong> Soft, low melting points, and highly reactive with water.</li>
+                <li><strong>Applications:</strong> Lithium batteries, sodium-vapor lamps, and potassium fertilizers.</li>
+            </ul>
+            <img src="images/alkali_metals.png" alt="Alkali Metals" class="responsive-image">
+            <br><br>
+        
+            <h3 class="mt-4">2. Alkaline Earth Metals (Group 2)</h3>
+            <p>
+                Alkaline earth metals are less reactive than alkali metals and are found in Group 2. This group includes beryllium (Be), magnesium (Mg), calcium (Ca), strontium (Sr), barium (Ba), and radium (Ra).
+            </p>
+            <ul>
+                <li><strong>Properties:</strong> Harder than alkali metals, high melting points, and reactive but less so than Group 1 elements.</li>
+                <li><strong>Applications:</strong> Magnesium alloys, calcium supplements, and strontium for fireworks.</li>
+            </ul>
+            <img src="images/alkaline_earth_metals.png" alt="Alkaline Earth Metals" class="responsive-image">
+            <br><br>
+        
+            <h3 class="mt-4">3. Transition Metals (Groups 3-12)</h3>
+            <p>
+                Transition metals are found in the center of the periodic table and include elements like iron (Fe), copper (Cu), and gold (Au). They are known for their ability to form colorful compounds.
+            </p>
+            <ul>
+                <li><strong>Properties:</strong> High melting points, excellent conductors of electricity, and form multiple oxidation states.</li>
+                <li><strong>Applications:</strong> Construction materials, electrical wiring, and catalysts in chemical reactions.</li>
+            </ul>
+            <img src="images/transition_metals.png" alt="Transition Metals" class="responsive-image">
+        <br><br>
+            <h3 class="mt-4">4. Post-Transition Metals</h3>
+            <p>
+                Post-transition metals include aluminum (Al), gallium (Ga), indium (In), tin (Sn), thallium (Tl), lead (Pb), and bismuth (Bi). These elements have properties between transition metals and metalloids.
+            </p>
+            <ul>
+                <li><strong>Properties:</strong> Malleable, lower melting points than transition metals, and less conductive.</li>
+                <li><strong>Applications:</strong> Aluminum for packaging, lead-acid batteries, and bismuth in medical applications.</li>
+            </ul>
+            <img src="images/post_transition_metals.png" alt="Post-Transition Metals" class="responsive-image">
+            <br><br>
+        
+            <h3 class="mt-4">5. Metalloids</h3>
+            <p>
+                Metalloids, or semimetals, have properties of both metals and nonmetals. Examples include boron (B), silicon (Si), and arsenic (As).
+            </p>
+            <ul>
+                <li><strong>Properties:</strong> Semi-conductive, brittle, and exhibit a mix of metallic and nonmetallic behavior.</li>
+                <li><strong>Applications:</strong> Silicon in electronics, boron in glass manufacturing, and arsenic in pesticides.</li>
+            </ul>
+            <img src="images/metalloids.png" alt="Metalloids" class="responsive-image">
+        <br><br>
+            <h3 class="mt-4">6. Nonmetals</h3>
+            <p>
+                Nonmetals are found on the right side of the periodic table and include elements like oxygen (O), nitrogen (N), and sulfur (S). These elements are essential for life.
+            </p>
+            <ul>
+                <li><strong>Properties:</strong> Poor conductors, brittle when solid, and form acidic oxides.</li>
+                <li><strong>Applications:</strong> Breathing oxygen, nitrogen fertilizers, and sulfur in rubber production.</li>
+            </ul>
+            <img src="images/nonmetals.png" alt="Nonmetals" class="responsive-image">
+        <br><br>
+            <h3 class="mt-4">7. Halogens (Group 17)</h3>
+            <p>
+                Halogens are highly reactive nonmetals found in Group 17, including fluorine (F), chlorine (Cl), bromine (Br), and iodine (I). They readily form salts with metals.
+            </p>
+            <ul>
+                <li><strong>Properties:</strong> Highly electronegative, form salts with metals, and exist in various states (gas, liquid, solid).</li>
+                <li><strong>Applications:</strong> Fluoride in toothpaste, chlorine for water purification, and iodine for medical antiseptics.</li>
+            </ul>
+            <img src="images/halogens.png" alt="Halogens" class="responsive-image">
+<br><br>
+            <h3 class="mt-4">8. Noble Gases (Group 18)</h3>
+            <p>
+                Noble gases are inert gases in Group 18, including helium (He), neon (Ne), and argon (Ar). They are chemically stable due to their full valence shells.
+            </p>
+            <ul>
+                <li><strong>Properties:</strong> Colorless, odorless, and nonreactive under normal conditions.</li>
+                <li><strong>Applications:</strong> Helium in balloons, neon lighting, and argon for welding.</li>
+            </ul>
+            <img src="images/noble_gases.png" alt="Noble Gases" class="responsive-image">
+        <br><br>
+        </section>
+        
+
+        <!-- Importance of the Periodic Table -->
+        <section id="importance">
+            <h2 class="section-title">Importance of the Periodic Table</h2>
+ <p>
+        The periodic table is one of the most vital tools in the field of chemistry and science. It organizes all known
+        chemical elements in a systematic way based on their atomic number, electron configuration, and recurring chemical properties.
+        This logical arrangement helps scientists, researchers, and students understand the behavior and relationships
+        between elements, making it easier to study chemical reactions and predict the properties of unknown substances.
+    </p>
+
+    <p>
+        Originally developed by Dmitri Mendeleev in 1869 and later refined by Henry Moseley in 1913, the modern periodic
+        table arranges elements in order of increasing atomic number. Elements are grouped into periods (rows) and families
+        or groups (columns), where elements in the same group share similar properties due to having the same number of
+        valence electrons. This structure reveals periodic trends, such as reactivity, electronegativity, atomic size, and ionization energy.
+    </p>
+
+    <p>
+        One of the most powerful features of the periodic table is its ability to predict chemical behavior. For example,
+        metals on the left side are generally good conductors and reactive, while nonmetals on the right tend to gain
+        electrons and form acids. This predictive ability has helped scientists discover new elements, design chemical compounds,
+        and develop materials with specific properties for use in fields like medicine, energy, and technology.
+    </p>
+
+    <p>
+        In education, the periodic table is a foundational tool that helps students visualize and understand key concepts
+        in chemistry. It provides a concise summary of essential information for each element, including its symbol,
+        atomic number, and atomic mass, making it easier to memorize and apply in calculations and experiments.
+    </p>
+
+    <p>
+        Moreover, the periodic table serves as a universal language in science, fostering collaboration across countries
+        and disciplines. It supports innovations in chemistry, biology, physics, and environmental science by offering a
+        reliable framework for exploring and understanding matter at the atomic level.
+    </p>
+
+    <p>
+        In conclusion, the periodic table is not just a chart — it is a cornerstone of scientific knowledge. It simplifies
+        complex data, reveals patterns in element behavior, supports learning and discovery, and continues to guide
+        researchers as they explore the unknown. Its importance in science is both timeless and irreplaceable.
+    </p>       <br><br> </section>
+
+        <!-- Future of the Periodic Table -->
+        <section id="future">
+            <h2 class="section-title">Future of the Periodic Table</h2>
+ <p>
+        The periodic table has served as a foundational scientific tool for over a century, but its evolution is far from complete. 
+        As scientific research advances, particularly in the fields of nuclear chemistry, quantum mechanics, and space exploration, 
+        the periodic table will continue to grow and change.
+    </p>
+
+    <p>
+        One major area of development lies in the discovery of <strong>superheavy elements</strong>—elements with atomic numbers 
+        beyond 118. Scientists are actively attempting to create these elements in laboratories using particle accelerators. 
+        These elements may have unique properties that challenge our current understanding of chemistry and physics. Some theorists 
+        even predict an “<strong>island of stability</strong>” where superheavy elements could exist with relatively long lifespans.
+    </p>
+
+    <p>
+        Advances in <strong>computational chemistry</strong> and <strong>quantum computing</strong> may also transform how we classify elements. 
+        New groupings might emerge based on electron behavior at extreme energies or in exotic conditions, such as those found on 
+        other planets. This could lead to an expansion or reorganization of the periodic table.
+    </p>
+
+    <p>
+        In education, the periodic table may become more interactive and immersive through <strong>augmented reality (AR)</strong> and 
+        <strong>virtual simulations</strong>, making it easier for students to visualize atomic structure and element behavior in 3D.
+    </p>
+
+    <p>
+        Moreover, as humans explore space and potentially mine asteroids or other celestial bodies, we may discover 
+        <strong>new elements or isotopes</strong> not found on Earth. This could further expand the table and our knowledge of 
+        matter in the universe.
+    </p>
+
+    <p>
+        In conclusion, the periodic table will not remain static. Its future is dynamic and exciting, driven by scientific discovery, 
+        technological innovation, and the unending curiosity of humankind. It will continue to evolve as a living document of the elements 
+        that shape our universe.
+    </p>            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Extended_periodic_table" style="text-decoration: none;">Wikipedia : Extended Periodic Table</a></li>
+            </ul>
+        </section>
+
+           <!-- Back to Table Button -->
+    <div class="text-center my-4">
+      <a href="../index.html#periodic-table" class="btn btn-primary">Back to Periodic Table</a>
+    </div>
+    </main>
+
+    </div>  
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="mb-2">© 2025 Periodic Universe</p>
+            <p>Created by:</p>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/ankushgupta18/" target="_blank">Ankush Gupta</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/het-gohil/" target="_blank">Het Gohil</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/shlok-jani-a5a98732b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Shlok Jani</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/dhwani-parmar-6a7bb1346/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">Dhwani Parmar</a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://www.linkedin.com/in/siddhi-brahmbhatt-482590347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Siddhi Brahmabhatt</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
